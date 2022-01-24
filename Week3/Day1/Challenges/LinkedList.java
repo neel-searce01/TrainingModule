@@ -3,7 +3,7 @@
 //Question2
 //LinkedList
 import java.util.Scanner;
-class List{
+class List{ //Creating a class in order to create a DataSpace which will hold the value of the node and address of the next node, too.
     int data;
     List next;
     List(int data){
@@ -16,11 +16,11 @@ class LinkedList {
 
     List head=null,temp;
 
-    void insertNode(int data){
+    void insertNode(int data){ //First or Head Node will be inserted here
         if(head==null){
             head = new List(data);
         }
-        else{
+        else{ //Elements after head will be added after checking the condition
             temp = head;
             while(temp.next!=null)
                 temp = temp.next;
@@ -28,7 +28,7 @@ class LinkedList {
         }
     }
 
-    void printList(){
+    void printList(){ //Function for printing the LinkedList
         temp = head;
         if(temp == null){
             System.out.println("Empty LinkedList");
@@ -40,7 +40,7 @@ class LinkedList {
         }
     }
 
-    int size(){
+    int size(){ //Function to calculate the Size of the linkedList
         temp = head;
         int size = 0;
         while(temp!=null){
@@ -51,10 +51,10 @@ class LinkedList {
     }
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { //Main Function
 
-        LinkedList ll = new LinkedList();
-        Scanner s = new Scanner (System.in);
+        LinkedList ll = new LinkedList(); //Initializing the LinkedList
+        Scanner s = new Scanner (System.in); //Using Scanner Class to take input
         
         System.out.print("Enter the number of elements you want to enter: ");
         int num = s.nextInt();

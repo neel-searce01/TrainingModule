@@ -4,7 +4,7 @@
 //Reverse Array
 import java.util.Scanner;
 public class ReverseArray{
-    static void rev(int arr[], int i){
+    static void rev(int arr[], int i){ //Static function for reversing and printing the array
         int[] arr1 = new int[i];
         int j = i;
         for(int z = 0; z < i; z++){
