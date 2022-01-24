@@ -1,3 +1,7 @@
+//Week3
+//Challenge: Day1
+//Question2
+//LinkedList
 import java.util.Scanner;
 class List{
     int data;
