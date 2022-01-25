@@ -14,16 +14,25 @@ public class Stack {
     }
 
     public void push(int ele){
-        if(!this.isFull())
-        stackArray[++top] = j;
-        else
-        System.out.println("Stack Full");
+        if(top > maxSize)
+        System.out.println("Stack is Full");
+       
+        stackArray[++top] = ele;
+
+        if(top==-1)
+        maxArray[++maxtop] = ele;
+        
+        if(data > maxArray[maxtop])
+        maxArray[++maxtop] = ele;
     }
 
     public int pop(){
         if(this.isEmpty())
-        return -1;
-        else
+        return "Stack is Empty";
+
+        if(maxArray[maxtop] == stackArray[top])
+        return maxArray[maxtop--];
+        
         return stackArray[top--];
     }
 }
