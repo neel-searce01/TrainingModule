@@ -16,16 +16,16 @@ public class Stack {
         maxSize = size;
         maxArray = new int[maxSize];
         stackArray = new int[maxSize];
-        maxtop = 0;
+        maxtop = -1;
         top = -1;
     }
 
     public void push(int ele){
-        if(top > maxSize)
+        if(top > maxSize){
             System.out.println("Stack is Full");
-
-        stackArray[++top] = ele;
-
+            stackArray[++top] = ele;
+        }
+        
         if(top==-1)
             maxArray[++maxtop] = ele;
 
