@@ -1,3 +1,7 @@
+//Week3
+//Challenge: Day3
+//Question1
+//Average Time
 #include <iostream>
 #include <vector>
 #include <algorithm>
