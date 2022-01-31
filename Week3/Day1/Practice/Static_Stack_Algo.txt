@@ -1,0 +1,15 @@
+//Push Operation:
+Step 1 - Check whether stack is FULL. (top == SIZE-1)
+Step 2 - If it is FULL, then display "Stack is FULL!!! Insertion is not possible!!!" and terminate the function.
+Step 3 - If it is NOT FULL, then increment top value by one (top++) and set stack[top] to value (stack[top] = value).
+
+//Pop Operation
+Step 1 - Check whether stack is EMPTY. (top == -1)
+Step 2 - If it is EMPTY, then display "Stack is EMPTY!!! Deletion is not possible!!!" and terminate the function.
+Step 3 - If it is NOT EMPTY, then delete stack[top] and decrement top value by one (top--).
+
+//Display Operation
+Step 1 - Check whether stack is EMPTY. (top == -1)
+Step 2 - If it is EMPTY, then display "Stack is EMPTY!!!" and terminate the function.
+Step 3 - If it is NOT EMPTY, then define a variable 'i' and initialize with top. Display stack[i] value and decrement i value by one (i--).
+Step 3 - Repeat above step until i value becomes '0'.
